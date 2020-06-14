@@ -36,7 +36,7 @@ class LList:
 		new.next = self.first
 		self.first = new
 
-	def at_ind(self,i,data):
+	def node_at_ind(self,i,data):
 		new = Node(data)
 		ptr = self.first
 		j = 0
@@ -49,7 +49,7 @@ class LList:
 		ptr.next = new
 
 
-	def index(self,i):
+	def data_at_ind(self,i):
 		ptr = self.first
 		j = 0
 		while j<i:
@@ -65,6 +65,6 @@ if __name__ == '__main__':
 		ll.append(item)
 	ll.prepend(list)
 	ll.printList()
-	ll.at_ind(15,list)
+	ll.node_at_ind(15,list)
 	ll.printList()
-	ll.index(5)
+	ll.data_at_ind(5)
